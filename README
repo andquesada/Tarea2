@@ -1,0 +1,3 @@
+1. El proyecto completo está dentro del folder Unificado.
+2. Dentro de este proyecto se pueden generar ambos programas por medio de: "make all".
+3. Para eliminar los binarios generados simplemente se debe digitar: "make clean"
