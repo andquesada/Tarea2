@@ -39,7 +39,7 @@ const char *MENSAJES_ERROR[CANTIDAD_ERRORES] = {
    "\nVerdadero.\n\n",
    "\nDirección ip inválida: %u.\nSe espera un entero sin signo.\n\n",
    "\nParámetro nulo.\n\n",
-   "\nCantidad de parámetros inválida.\nEsperados: %d.\nProvistos: %d.\nUso: ./programa2 dir_ip bits_subred\n\n",
+   "\nCantidad de parámetros inválida.\nEsperados: %d.\nProvistos: %d.\nUso: ./programa1 dir_ip\n\n",
    "\nBits para subred inválidos: %d.\nSe espera un valor entero que se encuentre en el rango [1, 32].\n\n"
 };
 

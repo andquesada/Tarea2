@@ -116,7 +116,7 @@ int main(int argc, char** argv)
       //cuando es cero implica que el número digitado es inválido
       if (dir_ip_uint == 0)
       {
-         sprintf(stderr,
+         fprintf(stderr,
                  MENSAJES_ERROR[RESULTADO_IP_INVALIDA],
                  dir_ip_uint);
 
@@ -132,7 +132,7 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         sprintf(stderr,
+         fprintf(stderr,
                  MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
@@ -143,7 +143,7 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         sprintf(stderr,
+         fprintf(stderr,
                  MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
@@ -160,7 +160,7 @@ int main(int argc, char** argv)
    }
    else
    {
-      sprintf(stderr,
+      fprintf(stderr,
               MENSAJES_ERROR[RESULTADO_CANT_PARAM],
               ARGUMENTOS_ESPERADOS,
               argc);
