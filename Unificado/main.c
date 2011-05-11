@@ -245,8 +245,9 @@ int main(int argc, char** argv)
       //cuando es cero implica que el número digitado es inválido
       if (dir_ip_uint == 0)
       {
-         printf(MENSAJES_ERROR[RESULTADO_IP_INVALIDA],
-                dir_ip_uint);
+         sprintf(stderr,
+                 MENSAJES_ERROR[RESULTADO_IP_INVALIDA],
+                 dir_ip_uint);
 
          return (EXIT_FAILURE);
       }
@@ -259,8 +260,9 @@ int main(int argc, char** argv)
 
       if (cant_bits_subred < 1 || cant_bits_subred > 32)
       {
-         printf(MENSAJES_ERROR[RESULTADO_SUBRED_INV],
-                cant_bits_subred);
+         sprintf(stderr,
+                 MENSAJES_ERROR[RESULTADO_SUBRED_INV],
+                 cant_bits_subred);
 
          return (EXIT_FAILURE);
       }
@@ -274,7 +276,8 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         printf(MENSAJES_ERROR[resultado]);
+         sprintf(stderr,
+                 MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
       }
@@ -289,7 +292,8 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         printf(MENSAJES_ERROR[resultado]);
+         sprintf(stderr,
+                 MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
       }
@@ -299,7 +303,8 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         printf(MENSAJES_ERROR[resultado]);
+         sprintf(stderr,
+                 MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
       }
@@ -313,7 +318,8 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         printf(MENSAJES_ERROR[resultado]);
+         sprintf(stderr,
+                 MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
       }
@@ -323,7 +329,8 @@ int main(int argc, char** argv)
 
       if (resultado != RESULTADO_OK)
       {
-         printf(MENSAJES_ERROR[resultado]);
+         sprintf(stderr,
+                 MENSAJES_ERROR[resultado]);
 
          return (EXIT_FAILURE);
       }
@@ -340,9 +347,10 @@ int main(int argc, char** argv)
    }
    else
    {
-      printf(MENSAJES_ERROR[RESULTADO_CANT_PARAM],
-             ARGUMENTOS_ESPERADOS,
-             argc);
+      sprintf(stderr,
+              MENSAJES_ERROR[RESULTADO_CANT_PARAM],
+              ARGUMENTOS_ESPERADOS,
+              argc);
 
       return (EXIT_FAILURE);
    }   
